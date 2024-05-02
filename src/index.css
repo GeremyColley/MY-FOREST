@@ -18,5 +18,37 @@ body {
   background-color: #010101;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
-  
+
+}
+.header-main {
+  position: relative;
+}
+
+.header-mai::after {
+  position: absolute;
+  content: "";
+  z-index: 100;
+  width: 100%;
+  height: calc((var(--index) * 10);
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: calc(var(--index) *  -4.5);
+}
+
+.layers {
+
+}
+
+.layer-head {
+
+}
+
+.caption {
+
+}
+
+.title {
+
 }

@@ -9,9 +9,8 @@ function App() {
           <header className="header-main">
               <div className="layers">
                 <div className="layer-head">
-                  <div className="caption">
-                    
-                  </div>
+                  <div className="caption">Welcome to Parallax Web</div>
+                  <div className="title">Dark forest</div>
                 </div>
               </div>
           </header>
