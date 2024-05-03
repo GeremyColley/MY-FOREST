@@ -1,9 +1,18 @@
+import { useEffect } from 'react';
 import layerBaseImage from './img/layer-base.png';
 import layerMidImage from './img/layer-middle.png';
 import layerFrontImage from './img/layer-front.png';
 import dungeonImage from './img/dungeon.jpg';
 
 function App() {
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let scrollY = window.scrollY;
+      document.documentElement.style.setProperty("--scrollTop", `${scrollY}px`);
+    });
+  },[]);
+
   return (
     <>
       <div className="wrapper">
@@ -24,6 +33,9 @@ function App() {
             <div className="m-article-content">
               <h2 className="m-header">Story to be continued</h2>
               <p className="m-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div className="copy">
+              Gérémy
             </div>
           </article>
         </div>
