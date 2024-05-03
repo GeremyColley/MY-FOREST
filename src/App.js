@@ -1,9 +1,10 @@
-
+import layerBaseImage from './img/layer-base.png';
+import layerMidImage from './img/layer-middle.png';
+import layerFrontImage from './img/layer-front.png';
 
 function App() {
   return (
     <>
-      <h1>Alice</h1>
       <div className="wrapper">
         <div className="content">
           <header className="header-main">
@@ -12,6 +13,9 @@ function App() {
                   <div className="caption">Welcome to Parallax Web</div>
                   <div className="title">Dark forest</div>
                 </div>
+                <div className="img-layer layer-base" style={{ backgroundImage : `url(${layerBaseImage})`}}></div>
+                <div className="img-layer layer-mid" style={{ backgroundImage : `url(${layerMidImage})`}}></div>
+                <div className="img-layer layer-front" style={{ backgroundImage : `url(${layerFrontImage})`}}></div>
               </div>
           </header>
         </div>

@@ -29,7 +29,7 @@ body {
   content: "";
   z-index: 100;
   width: 100%;
-  height: calc((var(--index) * 10);
+  height: calc(var(--index) * 10);
   background-image: url("./img/ground.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,9 +62,37 @@ body {
 
 .caption {
   transform: translate3d(0, calc(var(--scrollTop)/2), 0);
-  font-size: calc(var(--index)/2);
+  font-size: calc(var(--index) / 1.17 );
+  letter-spacing: calc(var(--index) / 3.5 );
+  margin-top: calc(var(--index) * -0.75);
 }
 
 .title {
+  font-size: calc(var(--index) * 2.75);
+  letter-spacing: calc(var(--index) / 2.5);
+}
 
+
+.img-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  z-index: 2;
+  transition: var(--transition);
+} 
+
+.layer-base {
+  transform: translate3d(0,calc(var(--scrollTop)/1.6),0);
+  z-index: 0;
+}
+
+.layer-mid {
+  transform: translate3d(0,calc(var(--scrollTop)/1.6),0);
+}
+
+.layer-front {
+  transform: translate3d(0,calc(var(--scrollTop)/1.6),0);
 }
