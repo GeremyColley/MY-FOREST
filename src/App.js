@@ -22,7 +22,7 @@ function App() {
               <div className="layers">
                 <div className="layer-head">
                   <div className="caption">Welcome to Parallax Web</div>
-                  <div className="title">Dark forest</div>
+                  <div className="title">Dark Forest</div>
                 </div>
                 <div className="img-layer layer-base" style={{ backgroundImage : `url(${layerBaseImage})`}}></div>
                 <div className="img-layer layer-mid" style={{ backgroundImage : `url(${layerMiddleImage})`}}></div>

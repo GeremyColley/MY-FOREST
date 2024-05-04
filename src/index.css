@@ -14,16 +14,19 @@
   src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   font-weight: 900;
 }
+/* ok */
 
 body {
   background-color: #010101;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
+/* ok */ 
 
 .header-main {
   position: relative;
 }
+/* ok */
 
 .header-mai::after {
   position: absolute;
@@ -37,6 +40,7 @@ body {
   background-position: center;
   bottom: calc(var(--index) * -4.5);
 }
+/* ok */
 
 .layers {
   height: 100vh;
@@ -46,8 +50,8 @@ body {
   text-align: center;
   overflow: hidden;
   position: relative;
-
 }
+/* ok */
 
 .layer-head {
   z-index: 1;
@@ -87,17 +91,20 @@ body {
 } 
 
 .layer-base {
-  transform: translate3d(0,calc(var(--scrollTop) / 1.6), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
   z-index: 0;
 }
+/* OK */ 
 
 .layer-mid {
-  transform: translate3d(0,calc(var(--scrollTop) / 1.6) , 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5) , 0);
 }
+/* OK */ 
 
 .layer-front {
-  transform: translate3d(0,calc(var(--scrollTop) / 1.6) , 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 5.6) , 0);
 }
+/* OK */ 
 
 .article-main {
   --mainarticle-transform: translate3d(0, clac(var(--scrollTop) / -7.6));
@@ -110,37 +117,38 @@ body {
   align-items: center;
   position: relative;
   text-align: center;
-  top: -2px;
+  top: 1px;
   z-index: 10;
 }
-
+/* ok */
 .m-article-content {
 
 }
 
 .m-header {
   text-transform: uppercase;
-  font-size: calc(var(--index) / 2 );
+  font-size: calc(var(--index) * 2.5 );
   letter-spacing: calc(var(--index) / 7.6);
   transform: var(--mainarticle-transform);
   transition: var(--transition);
   will-change: transform;
 }
+/* OK */
 
 .m-paragraph {
   max-width: calc(var(--index) * 30 );
-  font-size: calc(var(--index) * 0.9 );
-  margin-top: calc(var(--index) * 1.25 );
+  font-size: calc(var(--index) * 0.8 );
+  margin-top: calc(var(--index) / 1.25 );
   transform: var(--mainarticle-transform);
   transition: var(--transition);
   will-change: transform;
- /* color: red; */
-
 }
+/* ok */
 
 .content {
   will-change: transform;
 }
+/* ok */
 
 .copy {
   position: absolute;
@@ -150,3 +158,4 @@ body {
   letter-spacing: calc(var(--index) / 37.6);
 
 }
+/* ok */
