@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --index: calc(1vw+1vh);
+  --index: calc(1vw + 1vh);
   --text: #e7e7e0;
   --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 }
@@ -19,8 +19,8 @@ body {
   background-color: #010101;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
-
 }
+
 .header-main {
   position: relative;
 }
@@ -35,7 +35,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: calc(var(--index) *  -4.5);
+  bottom: calc(var(--index) * -4.5);
 }
 
 .layers {
@@ -51,28 +51,29 @@ body {
 
 .layer-head {
   z-index: 1;
-  transform: translate3d(0, calc(var(--scrollTop)/2), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
   transition: var(--transition);
   will-change: transform;
   text-transform: uppercase;
   font-weight: 900;
   color: var(--text);
   text-shadow: 0 0 20px #ba9827;
-
 }
+/* ok */
 
 .caption {
-  transform: translate3d(0, calc(var(--scrollTop)/2), 0);
-  font-size: calc(var(--index) / 1.17 );
-  letter-spacing: calc(var(--index) / 3.5 );
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+  font-size: calc(var(--index) / 1.17);
+  letter-spacing: calc(var(--index) / 3.5);
   margin-top: calc(var(--index) * -0.75);
 }
+/* ok */
 
 .title {
   font-size: calc(var(--index) * 2.75);
   letter-spacing: calc(var(--index) / 2.5);
 }
-
+/* ok */
 
 .img-layer {
   height: 100%;
@@ -86,16 +87,16 @@ body {
 } 
 
 .layer-base {
-  transform: translate3d(0,calc(var(--scrollTop)/1.6),0);
+  transform: translate3d(0,calc(var(--scrollTop) / 1.6), 0);
   z-index: 0;
 }
 
 .layer-mid {
-  transform: translate3d(0,calc(var(--scrollTop)/1.6),0);
+  transform: translate3d(0,calc(var(--scrollTop) / 1.6) , 0);
 }
 
 .layer-front {
-  transform: translate3d(0,calc(var(--scrollTop)/1.6),0);
+  transform: translate3d(0,calc(var(--scrollTop) / 1.6) , 0);
 }
 
 .article-main {
@@ -115,20 +116,16 @@ body {
 
 .m-article-content {
 
-
 }
 
 .m-header {
   text-transform: uppercase;
-  font-size: calc(var(--index) / 2.5 );
+  font-size: calc(var(--index) / 2 );
   letter-spacing: calc(var(--index) / 7.6);
   transform: var(--mainarticle-transform);
   transition: var(--transition);
   will-change: transform;
-
 }
-
-
 
 .m-paragraph {
   max-width: calc(var(--index) * 30 );
@@ -137,6 +134,8 @@ body {
   transform: var(--mainarticle-transform);
   transition: var(--transition);
   will-change: transform;
+ /* color: red; */
+
 }
 
 .content {
@@ -147,7 +146,7 @@ body {
   position: absolute;
   bottom: calc(var(--index) * 2.5);
   opacity: 0.5;
-  font-size: calc(var(--index) * 0.75 );
+  font-size: calc(var(--index) * 0.75);
   letter-spacing: calc(var(--index) / 37.6);
 
 }
